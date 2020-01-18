@@ -1,4 +1,10 @@
 .gnome_container {
+    background-color: grey;
+    height: 100%;
+    padding-top: 20px;
+    overflow: hidden;
+}
+.gnome_thumb {
     width: 110px;
     height: 110px;
     float: left;
@@ -13,4 +19,13 @@
 .gnome_name {
     font-size: calc(5px + 1vmin);
     color: white;
+    margin: 0;
+}
+.filter_bar {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.filter_type {
+    font-size: calc(10px + 1vmin);
 }
