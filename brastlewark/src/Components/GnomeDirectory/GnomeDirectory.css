@@ -5,8 +5,8 @@
     overflow: hidden;
 }
 .gnome_thumb {
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 140px;
     float: left;
 }
 .gnome_img {
@@ -20,6 +20,7 @@
     font-size: calc(5px + 1vmin);
     color: white;
     margin: 0;
+    height: 2em;
 }
 .filter_bar {
     width: 50%;
