@@ -16,7 +16,9 @@ export default ({ gnomes, filter, renderGnomes }) => {
   }, [filter]);
 
   return (
-    <div className="filter_type">
+    <div
+      className="filter_type"
+    >
       filter by profession
     </div>
   );

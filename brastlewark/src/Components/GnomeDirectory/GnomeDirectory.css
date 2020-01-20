@@ -1,12 +1,14 @@
 .gnome_container {
-    background-color: grey;
-    height: 100%;
-    padding-top: 20px;
-    overflow: hidden;
+    background-image: url('../../assets/paper-fibers.png');
+    background-color: #626262;
+    height: 55vh;
+    padding: 20px 0 0 30px;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 .gnome_thumb {
-    width: 100px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
     float: left;
 }
 .gnome_img {
@@ -15,15 +17,17 @@
     object-fit: cover;
     border-radius: 50%;
 }
-
 .gnome_name {
-    font-size: calc(5px + 1vmin);
+    font-size: 1.2rem;
     color: white;
     margin: 0;
-    height: 2em;
+    height: 50px;
+}
+.clickable {
+    cursor: pointer;
 }
 .filter_bar {
-    width: 50%;
+    width: 100vw;
     display: flex;
     justify-content: space-evenly;
 }

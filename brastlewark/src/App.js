@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
 import axios from 'axios';
 import GnomeDirectory from './Components/GnomeDirectory';
 import MyGnomeList from './Components/MyGnomeList';
 import Spinner from './Components/Spinner';
-
-export const GnomeContext = React.createContext(null);
+import './App.css';
 
 const url = 'https://raw.githubusercontent.com/rrafols/mobile_test/master/data.json';
 
@@ -29,15 +27,49 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>gnome directory</p>
-        {/* <GnomeContext.Provider value={{updateList, setGnomeList, gnomeList}}> */}
+    <div
+      className="App"
+    >
+      <header
+        className="App-header"
+      >
+        <h1>
+          WELCOME TO BRASTELWARK
+        </h1>
         {!status
           ? (
-            <div className="container">
+            <div
+              className="container"
+            >
+              <nav
+                className="navigation_menu"
+              >
+                <button
+                  type="button"
+                  className="leave_town__button"
+                  // eslint-disable-next-line no-alert
+                  onClick={() => alert('You left Brastelwark')}
+                >
+                  LEAVE TOWN
+                </button>
+                <div
+                  className="population_container"
+                >
+                  <p
+                    className="population_title"
+                  >
+                    LOCAL POPULATION
+                  </p>
+                  <span
+                    className="population_count"
+                  >
+                    {gnomes.Brastlewark.length}
+                  </span>
+                </div>
+              </nav>
               <MyGnomeList
                 gnomeList={list}
+                addGnomeToList={addGnomeToList}
               />
               <GnomeDirectory
                 gnomeArray={gnomes.Brastlewark}
@@ -52,7 +84,6 @@ function App() {
             Loading
             </div>
           )}
-        {/* </GnomeContext.Provider> */}
       </header>
     </div>
   );
