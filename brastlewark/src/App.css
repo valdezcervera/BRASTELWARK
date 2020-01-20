@@ -31,10 +31,13 @@ nav.navigation_menu {
 }
 p.population_title {
   margin: 0;
+  font-weight: bold;
 }
 .leave_town__button {
   background-color: burlywood;
   width: 200px;
   height: 40px;
   border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }

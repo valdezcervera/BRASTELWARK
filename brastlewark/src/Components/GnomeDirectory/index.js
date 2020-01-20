@@ -39,6 +39,7 @@ export default ({ gnomeArray, addGnomeToList, gnomeList }) => {
           <input
             value={filterName}
             onChange={handleChangeName}
+            placeholder="Gnome name"
           />
           <FilterByName
             filter={filterName}
@@ -52,6 +53,7 @@ export default ({ gnomeArray, addGnomeToList, gnomeList }) => {
           <input
             value={filterProfessions}
             onChange={handleChangeProfession}
+            placeholder="Profession"
           />
           <FilterByProfession
             filter={filterProfessions}
@@ -65,6 +67,7 @@ export default ({ gnomeArray, addGnomeToList, gnomeList }) => {
           <input
             value={filterFriends}
             onChange={handleChangeFriends}
+            placeholder="Friend name"
           />
           <FilterByFriends
             filter={filterFriends}
